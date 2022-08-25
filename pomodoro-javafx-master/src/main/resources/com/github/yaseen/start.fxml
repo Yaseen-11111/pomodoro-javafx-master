@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="container" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.yaseen.TitleController">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="68.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="81.0" prefWidth="200.0" styleClass="container" text="The Title" textAlignment="CENTER">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="282.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="282.0" prefWidth="203.0" styleClass="container">
+               <children>
+                  <Button contentDisplay="BOTTOM" lineSpacing="5.0" mnemonicParsing="false" onAction="#btnClickPomodoroClock" styleClass="toggle-btn" text="Pomodoro Timer" />
+                  <Button alignment="CENTER" contentDisplay="BOTTOM" lineSpacing="5.0" mnemonicParsing="false" onAction="#btnClickStopwatch" styleClass="toggle-btn" text="Stopwatch" />
+                  <Button mnemonicParsing="false" onAction="#btnClickTimer" styleClass="toggle-btn" text="Timer" />
+                  <Button mnemonicParsing="false" onAction="#btnClickTodo" styleClass="toggle-btn" text="To-do list" />
+                  <Button mnemonicParsing="false" styleClass="toggle-btn" text="Motivational Speech" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="container" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="4.0" prefWidth="600.0" />
+      <HBox alignment="CENTER" prefHeight="227.0" prefWidth="600.0">
+         <children>
+            <TextFlow prefHeight="227.0" prefWidth="515.0" styleClass="text-flow-canvas" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="138.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" styleClass="toggle-btn" text="Next" />
+         </children></HBox>
+   </children>
+</VBox>

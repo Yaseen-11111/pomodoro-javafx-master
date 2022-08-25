@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="container" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="600.0" styleClass="container" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.yaseen.StopwatchController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="167.0" prefWidth="600.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#homeBtnClicked" styleClass="toggle-btn" text="Home" />
+            </children>
+        </HBox>
+        <VBox alignment="TOP_CENTER" prefHeight="456.0" prefWidth="600.0" styleClass="container">
+            <children>
+                <Label fx:id="timerLabel" alignment="CENTER" prefHeight="189.0" prefWidth="497.0" styleClass="clock-progress-bar" text="00:00:00" textAlignment="CENTER">
+                    <font>
+                        <Font size="96.0" />
+                    </font>
+                </Label>
+                <Button fx:id="toggleBtn" mnemonicParsing="false" onAction="#toggleBtnClicked" styleClass="toggle-btn" text="PAUSE" />
+            <Button fx:id="startTimerBtn" mnemonicParsing="false" onAction="#startTimer" styleClass="toggle-btn" text="START" />
+            <Button layoutX="273.0" layoutY="268.0" mnemonicParsing="false" onAction="#resetTimer" styleClass="toggle-btn" text="RESET" />
+            <HBox prefHeight="9.0" prefWidth="600.0" />
+            </children></VBox>
+    </children>
+</VBox>

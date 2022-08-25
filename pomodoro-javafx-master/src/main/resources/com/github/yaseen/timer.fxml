@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="container" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="600.0" styleClass="container" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.yaseen.TimerController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="106.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#homeBtnClicked" styleClass="toggle-btn" text="Home" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" styleClass="container">
+         <children>
+            <ProgressBar fx:id="clockProgressBar" prefHeight="0.0" prefWidth="365.0" progress="0.0" />
+            <Label fx:id="clockLabel" alignment="CENTER" prefHeight="165.0" prefWidth="352.0" styleClass="clock-progress-bar" text="00:00" textAlignment="CENTER">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+            <Button fx:id="toggleBtn" mnemonicParsing="false" onAction="#toggleBtnClicked" styleClass="toggle-btn" text="START" />
+            <Label alignment="CENTER" prefHeight="41.0" prefWidth="132.0" text="Time (minutes)">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Spinner fx:id="timerSpinner" editable="true" maxWidth="90.0">
+               <valueFactory>
+                  <SpinnerValueFactory.IntegerSpinnerValueFactory max="99" min="1" />
+               </valueFactory>
+            </Spinner>
+            <Button mnemonicParsing="false" onAction="#saveBtnClicked" styleClass="generic-btn" text="Set" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children></VBox>
+   </children>
+</VBox>
