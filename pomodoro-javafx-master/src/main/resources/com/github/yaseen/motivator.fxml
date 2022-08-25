@@ -4,17 +4,23 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="container" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="container" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.yaseen.MotivatorController">
    <children>
       <HBox prefHeight="4.0" prefWidth="600.0" />
       <HBox alignment="CENTER" prefHeight="227.0" prefWidth="600.0">
          <children>
-            <TextFlow prefHeight="227.0" prefWidth="515.0" styleClass="text-flow-canvas" />
+            <TextFlow fx:id="textFlow" prefHeight="227.0" prefWidth="515.0" styleClass="text-flow-canvas" textAlignment="CENTER">
+               <children>
+                  <Label fx:id="textLabel" alignment="CENTER" prefHeight="252.0" prefWidth="460.0" text="Welcome to the motivator" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               </children></TextFlow>
          </children>
       </HBox>
       <HBox alignment="TOP_CENTER" prefHeight="138.0" prefWidth="600.0">
          <children>
-            <Button mnemonicParsing="false" styleClass="toggle-btn" text="Next" />
+            <Button mnemonicParsing="false" onAction="#loadQuotes" styleClass="toggle-btn" text="Next" />
          </children></HBox>
    </children>
 </VBox>

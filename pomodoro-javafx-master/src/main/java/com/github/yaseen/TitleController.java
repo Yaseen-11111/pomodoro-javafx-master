@@ -19,4 +19,8 @@ public class TitleController{
     public void btnClickStopwatch() throws IOException {
         App.setRoot("stopwatch");
     }
+
+    public void btnMotivator() throws IOException {
+        App.setRoot("motivator");
+    }
 }

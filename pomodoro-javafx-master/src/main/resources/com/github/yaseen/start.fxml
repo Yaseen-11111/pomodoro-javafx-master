@@ -23,7 +23,7 @@
                   <Button alignment="CENTER" contentDisplay="BOTTOM" lineSpacing="5.0" mnemonicParsing="false" onAction="#btnClickStopwatch" styleClass="toggle-btn" text="Stopwatch" />
                   <Button mnemonicParsing="false" onAction="#btnClickTimer" styleClass="toggle-btn" text="Timer" />
                   <Button mnemonicParsing="false" onAction="#btnClickTodo" styleClass="toggle-btn" text="To-do list" />
-                  <Button mnemonicParsing="false" styleClass="toggle-btn" text="Motivational Speech" />
+                  <Button mnemonicParsing="false" onAction="#btnMotivator" styleClass="toggle-btn" text="Motivational Speech" />
                </children>
             </VBox>
          </children>
