@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class MotivatorController {
     @FXML
     private TextFlow textFlow;
-    @FXML
+    @FXMLs
     private Label textLabel;
 
     private ArrayList<String> quotes;
@@ -25,8 +25,9 @@ public class MotivatorController {
             quotes = new ArrayList<>();
             while ((line = br.readLine()) != null) {
                 quotes.add(line);
-                System.out.println(line);
             }
+            fis.close();
+            br.close();
 
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
